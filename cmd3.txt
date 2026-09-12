@@ -1,0 +1,5 @@
+cloudera@quickstart ~]$ hdfs dfs –mkdir /maxinput
+[cloudera@quickstart ~]$ cd Desktop
+[cloudera@quickstart Desktop]$ hdfs dfs -copyFromLocal datafileofweather.txt /maxinput
+[cloudera@quickstart Desktop]$ hdfs jar MaxTemp.jar MyMaxMin /maxinput /maxoutput
+[cloudera@quickstart Desktop]$ hdfs dfs -cat /maxoutput/part-r-00000
