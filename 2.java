@@ -21,8 +21,7 @@ int p = Integer.parseInt(conf.get("p"));
 String line = value.toString();
 String[] indicesAndValue = line.split(",");
 Text outputKey = new Text(); //object for output key
-Text outputValue = new Text(); // object for output
-key
+Text outputValue = new Text(); // object for output key
 if (indicesAndValue[0].equals("M"))
 {
 for (int k = 0; k < p; k++)
