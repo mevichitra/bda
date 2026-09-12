@@ -1,0 +1,15 @@
+1. pwd - to know the present working directory of the local file system.
+To explore the HDFS use following command
+2. hdfs dfs -ls /
+To explore the specific directory of HDFS for example user directory of HDFS
+3. hdfs dfs -ls /user
+To create the directory in the /user/root and list the /user/root use following command
+4. hdfs dfs -mkdir /user/root/demodir
+5. hdfs dfs -ls /user/root/
+To copy the file temp.txt from Local file system location (/user/cloudera/Desktop/temp.txt) use
+the following command:
+6. cd Desktop // since file is on Desktop
+7. hdfs dfs -copyFromLocal temp.txt /user/root/demodir
+8. hdfs dfs -ls /user/root/demodir
+To list the content of temp.txt use following command
+9. hdfs dfs -cat /user/root/demodir/temp.txt
