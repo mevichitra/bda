@@ -1,0 +1,6 @@
+[cloudera@quickstart Desktop]$ hadoop dfs -mkdir /matin
+[cloudera@quickstart Desktop]$ hadoop dfs -copyFromLocal matrix.txt /matin
+[cloudera@quickstart Desktop]$ hadoop dfs -cat /user/root/matin/matrix.txt
+[cloudera@quickstart Desktop]$ hadoop jar MatMul.jar MatMul /user/root/matin
+/user/root/matout
+[cloudera@quickstart Desktop]$ hadoop dfs -cat /user/root/matout/part-r-00000
