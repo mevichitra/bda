@@ -1,0 +1,6 @@
+cloudera@quickstart ~]$ hdfs dfs -mkdir /movie
+[cloudera@quickstart ~]$ hdfs dfs -mkdir /tag
+[cloudera@quickstart ~]$ cd Desktop
+[cloudera@quickstart Desktop]$ hdfs dfs -copyFromLocal Movie.txt /movie
+[cloudera@quickstart Desktop]$ hdfs dfs -copyFromLocal Tags.txt /tag
+[cloudera@quickstart Desktop]$ hdfs dfs -cat /movie/Movie.txt
